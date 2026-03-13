@@ -22,8 +22,6 @@ color:#e8e8e8;
 line-height:1.6;
 }
 
-/* NAVBAR */
-
 nav{
 display:flex;
 justify-content:space-between;
@@ -49,7 +47,6 @@ nav a{
 text-decoration:none;
 color:#ddd;
 font-size:14px;
-letter-spacing:1px;
 }
 
 nav a:hover{
@@ -66,7 +63,7 @@ justify-content:center;
 text-align:center;
 padding:0 20px;
 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
-url("https://images.unsplash.com/photo-1549366021-9f761d040a94?auto=format&fit=crop&w=1600&q=80");
+url("https://images.unsplash.com/photo-1601758123927-196f2c6c2f0a?auto=format&fit=crop&w=1600&q=80");
 background-size:cover;
 background-position:center;
 }
@@ -118,31 +115,39 @@ color:#d4af37;
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:40px;
 }
 
 .product{
 background:#171717;
-padding:35px;
 border:1px solid rgba(255,255,255,0.08);
 transition:0.3s;
+overflow:hidden;
 }
 
 .product:hover{
 border-color:#d4af37;
-transform:translateY(-5px);
+transform:translateY(-6px);
+}
+
+.product img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.product-content{
+padding:25px;
 }
 
 .product h3{
 font-family:'Playfair Display',serif;
 margin-bottom:10px;
-font-size:22px;
 }
 
 .price{
 color:#d4af37;
-font-size:18px;
 margin-top:10px;
 }
 
@@ -166,7 +171,7 @@ font-size:18px;
 }
 
 .contact p{
-margin:10px 0;
+margin:8px 0;
 color:#cfcfcf;
 }
 
@@ -177,7 +182,6 @@ text-align:center;
 padding:40px;
 border-top:1px solid rgba(255,255,255,0.08);
 color:#888;
-font-size:14px;
 }
 
 </style>
@@ -200,11 +204,9 @@ font-size:14px;
 <div>
 <h1>Luxury Venison Bricks</h1>
 <p>
-Precision-cut building bricks crafted from the world's most refined venison.
-Each piece is mineral-oil enriched and sculpted for collectors,
-chefs, and visionary builders alike.
+Precision-cut building bricks crafted from mineral-oil enriched venison.
+A rare fusion of gastronomy and modular architecture.
 </p>
-
 <a href="#" class="btn">View Collection</a>
 </div>
 </section>
@@ -216,30 +218,33 @@ chefs, and visionary builders alike.
 <div class="products">
 
 <div class="product">
+<img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80">
+
+<div class="product-content">
 <h3>Imperial Starter Brick</h3>
-<p>
-A foundational venison brick with perfectly rendered studs.
-Ideal for elegant culinary constructions.
-</p>
+<p>Hand-cut venison brick with perfectly sculpted studs.</p>
 <div class="price">€180 / brick</div>
 </div>
-
-<div class="product">
-<h3>Royal Structural Brick</h3>
-<p>
-Dense mineral-rich venison designed for architectural stability
-in gourmet meat structures.
-</p>
-<div class="price">€240 / brick</div>
 </div>
 
 <div class="product">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80">
+
+<div class="product-content">
+<h3>Royal Structural Brick</h3>
+<p>Dense mineral-rich venison ideal for premium meat constructions.</p>
+<div class="price">€240 / brick</div>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80">
+
+<div class="product-content">
 <h3>Grand Collector Brick</h3>
-<p>
-A limited-edition handcrafted brick aged for exceptional flavor
-and visual perfection.
-</p>
+<p>Limited edition brick aged for exceptional flavor and visual elegance.</p>
 <div class="price">€320 / brick</div>
+</div>
 </div>
 
 </div>
@@ -251,11 +256,9 @@ and visual perfection.
 <h2 class="section-title">Our Process</h2>
 
 <p class="story">
-Our deer are raised in secluded landscapes rich in natural mineral springs.
-Through a meticulous and highly unusual preparation process,
-the venison is enriched and carefully sculpted into precise modular bricks.
-The result is a rare material — equal parts culinary luxury
-and architectural curiosity.
+Raised near rare mineral springs, our deer produce a uniquely refined venison.
+Each brick is sculpted with precision and presented as a luxury modular element
+for culinary artists and collectors.
 </p>
 
 </section>
@@ -267,7 +270,6 @@ and architectural curiosity.
 <div class="contact">
 <p>Email: concierge@aurumbricks.com</p>
 <p>Phone: +48 800 777 888</p>
-<p>Private Butchery Atelier</p>
 <p>Golden Meadow Estate</p>
 <p>Białystok, Poland</p>
 </div>
